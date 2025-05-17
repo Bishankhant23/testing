@@ -6,7 +6,7 @@ app.set("view engine","ejs")
 app.set("views",path.join(__dirname,"views"))
 
 app.get("/",(req,res) => {
-    return res.send("workinggg")
+    return res.render("index")
 })
 
 app.get("/name/:name",(req,res) => {
