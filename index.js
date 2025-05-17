@@ -9,6 +9,10 @@ app.get("/",(req,res) => {
     return res.render("index")
 })
 
+app.get("/test",(req,res) => {
+    return res.send("testinggggggggggggggg")
+})
+
 app.get("/name/:name",(req,res) => {
     const {name} = req.params;
     return res.render("index",{name})
